@@ -11,7 +11,7 @@ function OilSpillPage() {
     const [spillData, setSpillData] = useState(null);
 
     useEffect(() => {
-        fetch("http://10.10.189.221:8000/ais_data")
+        fetch("http://localhost:8000/ais_data")
             .then((response) => response.text())
             .then((csvText) => {
                 Papa.parse(csvText, {
