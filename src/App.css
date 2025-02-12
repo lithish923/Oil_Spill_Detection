@@ -1,0 +1,170 @@
+.App {
+  display: flex;
+}
+
+img {
+  margin: 2px;
+}
+
+.data-container {
+  width: 30vw;
+  height: calc(100vh - 88px);
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.map-container {
+  position: absolute;
+}
+
+.navbar {
+  border-radius: 10px 10px 0 0;
+  backdrop-filter: blur(15px);
+}
+
+.outlet {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  position: relative;
+  z-index: 1;
+  margin: 16px;
+  margin-bottom: 22px;
+}
+
+.AISdata-container {
+  background-color: #e0f0ff;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  color: #3a3a3a;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  transform-origin: center;
+}
+
+.AISdata-container:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.AISdata-date {
+  background-color: #0e79dcde;
+  color: white;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 5px;
+  min-height: 70px;
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.AISdata-info {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.AISdata-info > .vessel-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.AISdata-info > .vessel-location > span {
+  margin: 5px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.spill-data {
+  background-color: #fff;
+  height: calc(100vh - 88px - 32px);
+  overflow: auto;
+  scrollbar-width: none;
+  border-radius: 6px;
+  margin: 8px;
+  padding: 7px;
+}
+
+.header {
+  background-color: #e0f0ff;
+  color: #3a3a3a;
+  border-radius: 7px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > p {
+  padding: 14px 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+p {
+  padding: 2px;
+  margin: 0;
+  width: 0;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(50, end) forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.header > span {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.info > div {
+  display: flex;
+}
+
+.info .label,
+.info .value {
+  width: 50%;
+  margin: 2px;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.info > div:nth-child(even) {
+  background-color: #d4d4d46b;
+}
+
+.info > div:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.info .value {
+  font-size: 14px;
+  color: #3a3a3ae5;
+  font-weight: 500;
+}
+
+.info .label {
+  color: #3a3a3a;
+}
+
+.image-container img{
+  width: 400px; 
+  height: 400px;
+   object-fit: cover;
+   margin: 0 0;
+   object-position: left;
+}
