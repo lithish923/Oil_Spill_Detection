@@ -14,7 +14,7 @@ function SatelliteDataPage() {
 
     useEffect(() => {
         // Fetch the CSV file from the public folder
-        fetch("http://10.10.185.125:8000/ais_data")  // Path to the CSV file in the public folder
+        fetch("http://10.10.109.241:8000/ais_data")  // Path to the CSV file in the public folder
             .then((response) => response.text())  // Read response as text
             .then((csvText) => {
                 // Parse the CSV text
@@ -78,7 +78,7 @@ function SatelliteDataPage() {
                     <div className="info">
                     <div className="image-container">
                         <img
-                            src={`http://10.10.185.125:8000/image?path=${spillData.extracted_path}`}
+                            src={`http://10.10.109.241:8000/image?path=${spillData.extracted_path}`}
                             alt="SAR Backscatter"
                         />
                     </div>

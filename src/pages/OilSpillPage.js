@@ -11,7 +11,7 @@ function OilSpillPage() {
     const [spillData, setSpillData] = useState(null);
 
     useEffect(() => {
-        fetch("http://10.10.185.125:8000/ais_data")
+        fetch("http://10.10.109.241:8000/ais_data")
             .then((response) => response.text())
             .then((csvText) => {
                 Papa.parse(csvText, {
@@ -72,7 +72,7 @@ function OilSpillPage() {
                     </div>
                     <div className="info">
                         <img
-                            src={`http://10.10.185.125:8000/image?path=${encodeURIComponent(spillData.extracted_path)}`}
+                            src={`http://10.10.109.241:8000/image?path=${encodeURIComponent(spillData.extracted_path)}`}
                             width="100%"
                             height="auto"
                             alt="Predicted Mask"

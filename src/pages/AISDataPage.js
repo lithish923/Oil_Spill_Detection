@@ -14,7 +14,7 @@ function AISDataPage() {
 
     useEffect(() => {
         // Fetch the CSV file from the public folder
-        fetch("http://10.10.185.125:8000/ais_data")  // Path to the CSV file in the public folder
+        fetch("http://10.10.109.241:8000/ais_data")  // Path to the CSV file in the public folder
             .then((response) => response.text())  // Read response as text
             .then((csvText) => {
                 // Parse the CSV text
@@ -75,7 +75,7 @@ function AISDataPage() {
                 <span onClick={() => { setSpillData(null) }}><IoCloseCircleOutline /></span>
             </div>
             <div className="info">
-                {/* <img src={`http://10.10.185.125:8000/image?path=${spillData.extracted_path}`} width='100%' height='auto' alt="Image not available" /> */}
+                {/* <img src={`http://10.10.109.241:8000/image?path=${spillData.extracted_path}`} width='100%' height='auto' alt="Image not available" /> */}
                 {
                     Object.entries(spillData).map(([key, value], index) => (
                         ['extracted_path', 'path'].includes(key) || !value ?
