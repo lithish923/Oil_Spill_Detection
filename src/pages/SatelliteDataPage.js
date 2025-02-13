@@ -78,7 +78,7 @@ function SatelliteDataPage() {
                     <div className="info">
                     <div className="image-container">
                         <img
-                            src={`http://localhost:8000/image?path=${spillData.extracted_path}`}
+                            src={`http://10.10.185.125:8000/image?path=${spillData.extracted_path}`}
                             alt="SAR Backscatter"
                         />
                     </div>
